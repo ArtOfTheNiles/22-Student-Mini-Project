@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0; /*Removes built-in padding*/
+    margin: 0; /*Removes built-in margins*/
+}
+
+:root {
+    --body-font-size: 16px;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.6rem;
+    --h3-font-size: 1.1rem;
+    --h4-font-size: 0.9rem;
+    --h5-font-size: 0.75rem;
+    --h6-font-size: 0.6rem;
+}
+
+body {
+    margin-top: 4rem; /*Compensating for fixed header*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--body-font-size);
+    color: #252525;
+}
+
+p{
+    margin: 1rem;
+}
+
+/*--Anchors-- LVHA*/
+a {         color: rgb(60, 242, 255);   }
+a:visited { color: rgb(13, 7, 49);      }
+a:hover {   color: #ffa500; }
+a:active {  color: #ff4500; }
+
+/*--Headings--*/
+h1 { 
+    font-size: var(--h1-font-size); 
+    text-align: center;
+    color: rgb(65, 63, 88);
+    margin: var(--h1-font-size);
+}
+h2 { 
+    font-size: var(--h2-font-size); 
+    text-align: center;
+    margin: min(var(--h2-font-size), 0.5rem, 10px);
+}
+h3 { font-size: var(--h3-font-size); margin: var(--h3-font-size);}
+h4 { font-size: var(--h4-font-size); margin: var(--h4-font-size);}
+h5 { font-size: var(--h5-font-size); margin: var(--h5-font-size);}
+h6 { font-size: var(--h6-font-size); margin: var(--h6-font-size);}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 0% auto;
+}
+
+header {
+    background-color: rgb(58, 75, 122);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+
+ul, nav {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 10%;
+}
+
+.vertical-list { 
+    display: block; 
+    margin: 0.3rem;
+}
+.horizontal-list { 
+    color: white;
+    margin: 1rem 1rem;
+    display: inline-block; 
+}
+
+.caption {
+    font-size: 0.66rem;
+    margin: 0.1rem auto 0.66rem;
+}
+
+.navlink {
+    color: white;
+}
+
+#image {
+    text-align: center;
+}
+
+#body-text{
+    margin: 2rem 10% 2rem;
+}
+
+#contact-form {
+    padding: 0.1rem;
+    text-align: center;
+    background-color: rgb(223, 208, 193);
+    color:rgb(97, 71, 71);
+}
